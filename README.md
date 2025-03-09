@@ -32,10 +32,11 @@ The result displays the uploaded image and the predicted disease.
 
 ## 🖥️ Technologies Used  
 - **Python**  
-- **TensorFlow/Keras**  
+- **TensorFlow/Keras**
+- **CNN**
 - **OpenCV**  
 - **Flask**  
-- **HTML/CSS**  
+- **HTML**  
 
 ---
 
@@ -43,10 +44,35 @@ The result displays the uploaded image and the predicted disease.
 1. **Clone the Repository**  
 ```bash
 git clone https://github.com/yourusername/potato-leaf-disease-detection.git
-
-Create and Activate a Virtual Environment
+```
+2. **Create and Activate a Virtual Environment**
 ```bash
 python -m venv venv  
 source venv/bin/activate   # Linux/MacOS  
 venv\Scripts\activate      # Windows  
-
+```
+3. **Install Dependencies**
+```bash
+pip install -r requirements.txt  
+```
+4. **Run the Flask App**
+```bash
+python app.py  
+```
+5. **click and open the link in the browser**
+```bash
+http://127.0.0.1:5000  
+```
+## 🧠 Model Information
+- Model Type: Convolutional Neural Network (CNN)
+- Dataset: Potato Leaf Disease Dataset (from Kaggle)
+### Classes:
+- Healthy
+- Potato__Early_blight
+- Potato__Late_blight
+## 📊 Results
+- Metric	Score (%)
+- Accuracy	89.22%
+## 📄 License
+### This project is licensed under the MIT License.
+## 🌟 If you like this project, give it a ⭐ on GitHub!
